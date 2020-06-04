@@ -8,18 +8,18 @@ define('HTTPS_SERVER', 'https://dealworld.shop/admin/');
 define('HTTPS_CATALOG', 'https://dealworld.shop/');
 
 // DIR
-define('DIR_APPLICATION', '/var/www/vhosts/dealworld.shop/httpdocs/admin/');
-define('DIR_SYSTEM', '/var/www/vhosts/dealworld.shop/httpdocs/system/');
-define('DIR_LANGUAGE', '/var/www/vhosts/dealworld.shop/httpdocs/admin/language/');
-define('DIR_TEMPLATE', '/var/www/vhosts/dealworld.shop/httpdocs/admin/view/template/');
-define('DIR_CONFIG', '/var/www/vhosts/dealworld.shop/httpdocs/system/config/');
-define('DIR_IMAGE', '/var/www/vhosts/dealworld.shop/httpdocs/image/');
-define('DIR_CACHE', '/var/www/vhosts/dealworld.shop/httpdocs/system/storage/cache/');
-define('DIR_DOWNLOAD', '/var/www/vhosts/dealworld.shop/httpdocs/system/storage/download/');
-define('DIR_LOGS', '/var/www/vhosts/dealworld.shop/httpdocs/system/storage/logs/');
-define('DIR_MODIFICATION', '/var/www/vhosts/dealworld.shop/httpdocs/system/storage/modification/');
-define('DIR_UPLOAD', '/var/www/vhosts/dealworld.shop/httpdocs/system/storage/upload/');
-define('DIR_CATALOG', '/var/www/vhosts/dealworld.shop/httpdocs/catalog/');
+define('DIR_APPLICATION', '/var/www/vhosts/dealworld.shop/admin/');
+define('DIR_SYSTEM', '/var/www/vhosts/dealworld.shop/system/');
+define('DIR_LANGUAGE', '/var/www/vhosts/dealworld.shop/admin/language/');
+define('DIR_TEMPLATE', '/var/www/vhosts/dealworld.shop/admin/view/template/');
+define('DIR_CONFIG', '/var/www/vhosts/dealworld.shop/system/config/');
+define('DIR_IMAGE', '/var/www/vhosts/dealworld.shop/image/');
+define('DIR_CACHE', '/var/www/vhosts/dealworld.shop/system/storage/cache/');
+define('DIR_DOWNLOAD', '/var/www/vhosts/dealworld.shop/system/storage/download/');
+define('DIR_LOGS', '/var/www/vhosts/dealworld.shop/system/storage/logs/');
+define('DIR_MODIFICATION', '/var/www/vhosts/dealworld.shop/system/storage/modification/');
+define('DIR_UPLOAD', '/var/www/vhosts/dealworld.shop/system/storage/upload/');
+define('DIR_CATALOG', '/var/www/vhosts/dealworld.shop/catalog/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
