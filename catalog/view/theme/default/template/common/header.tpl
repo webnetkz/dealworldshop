@@ -183,7 +183,7 @@
 
 <div class="container">
   <nav id="newMenu">
-    <p class="allCats">xxx</p>
+    <p class="allCats">Каталог товаров</p>
     <div class="showAllCats">
       <ul>
     <?php foreach ($categories as $category) { ?>
