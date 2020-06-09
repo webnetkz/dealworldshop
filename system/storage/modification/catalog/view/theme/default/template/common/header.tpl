@@ -9,6 +9,87 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style>
+#newMenu {
+	background-color: rgba(255, 255, 255, 0);
+}
+.dropRightMenu {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	height: 100%;
+	width: 380%;
+	background: rgb(252, 252, 242);
+	padding: 10px;
+	box-shadow: 0 0 10px black;
+}
+.allCatsItem {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 100%;
+	margin-left: -10px;
+	text-align: center;
+	background: rgb(240, 240, 240);
+	padding: 10px;
+	font-weight: 600;
+}
+.allCatsItem:hover {
+	cursor: pointer;
+}
+.dropMenuTwo {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+.dropMenuTwo {
+	list-style: none;
+}
+.dropMenuTwo > li {
+	padding: 5px;
+	flex: 1 0 33%;
+}
+.allCats {
+	font-weight: 600;
+	width: 20%;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.allCats:hover {
+	cursor: pointer;
+}
+.showAllCats {
+	display: none;
+	position: relative;
+	top: -10px;
+	width: 250px;
+	height: 70%;
+	z-index: 9999999;
+	background: rgb(252, 252, 242);
+	box-shadow: 0 0 10px black;
+	overflow: scroll-y;
+}
+.showAllCats > ul {
+	width: 100%;
+	height: 100%;
+	padding-left: 0;
+}
+.menuItem {
+	list-style-type: none;
+	padding-left: 10px;
+	padding: 5px;
+}
+.menuItem:hover {
+	background: rgb(240, 240, 240);
+}
+.menuLink {
+	color: rgb(100, 100, 100);
+	width: 100%!important;
+}
+</style>
 <title><?php echo $title; if (isset($_GET['page'])) { echo " - ". ((int) $_GET['page'])." ".$text_page;} ?></title>
 <base href="<?php echo $base; ?>" />
 <?php if ($description) { ?>
@@ -130,34 +211,89 @@
   </div>
 </header>
 <?php if ($categories) { ?>
+
+
+
 <div class="container">
-  <nav id="menu" class="navbar">
-    <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
-      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-    </div>
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
-        <?php foreach ($categories as $category) { ?>
-        <?php if ($category['children']) { ?>
-        <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
-          <div class="dropdown-menu">
+  <nav id="newMenu">
+    <p class="allCats">Catalog</p>
+    <div class="showAllCats">
+      <ul>
+    <?php foreach ($categories as $category) { ?>
+    <?php if ($category['children']) { ?>
+        <!--<a class="" href="<?php echo $category['href']; ?>">-->
+          <li class="dropDownItem menuLink menuItem"><?php echo $category['name']; ?></li>
+        <!--</a>-->
+            
+
+
+          <div class="dropRightMenu">
             <div class="dropdown-inner">
               <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
-              <ul class="list-unstyled">
+              <ul class="dropMenuTwo">
                 <?php foreach ($children as $child) { ?>
                 <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
                 <?php } ?>
               </ul>
               <?php } ?>
             </div>
-            <a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
-        </li>
-        <?php } else { ?>
-        <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-        <?php } ?>
-        <?php } ?>
+            <a href="<?php echo $category['href']; ?>" class="allCatsItem"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
+        
+
+
+
+      <?php } else { ?>
+        <a class="menuLink" href="<?php echo $category['href']; ?>">
+          <li class="menuItem">
+            <?php echo $category['name']; ?>
+          </li>
+        </a>
+    <?php } ?>
+    <?php } ?>
       </ul>
     </div>
   </nav>
 </div>
 <?php } ?>
+
+<script>
+  let allCats = document.querySelector('.allCats');
+  let showAllCats = document.querySelector('.showAllCats');
+
+  allCats.addEventListener('mousemove', () => {
+    showAllCats.style.display = 'block';
+  });
+  showAllCats.addEventListener('mousemove', () => {
+    showAllCats.style.display = 'block';
+  });
+  allCats.addEventListener('mouseout', () => {
+    showAllCats.style.display = 'none';
+  });
+  showAllCats.addEventListener('mouseout', () => {
+    showAllCats.style.display = 'none';
+  });
+
+  let dropDownItem = document.querySelectorAll('.dropDownItem');
+  for(let i = 0; i < dropDownItem.length; i++) {
+    dropDownItem[i].addEventListener('mousemove',() => {
+      console.log(dropDownItem[i]);
+      let dropRightMenu = dropDownItem[i].nextSibling;
+      dropRightMenu = dropRightMenu.nextSibling;
+      dropRightMenu = dropRightMenu.nextSibling;
+      dropRightMenu = dropRightMenu.nextSibling;
+      dropRightMenu.style.display = 'block';
+
+      dropRightMenu.addEventListener('mousemove', () => {
+        dropRightMenu.style.display = 'block';
+      });
+
+      dropRightMenu.addEventListener('mouseout', () => {
+        dropRightMenu.style.display = 'none';
+      });
+
+      dropDownItem[i].addEventListener('mouseout', () => {
+        dropRightMenu.style.display = 'none';
+      });
+    });
+  }
+</script>

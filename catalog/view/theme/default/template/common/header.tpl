@@ -26,16 +26,31 @@
 }
 .allCatsItem {
 	position: absolute;
-	bottom: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	margin-left: -10px;
+	text-align: center;
+	background: rgb(240, 240, 240);
+	padding: 10px;
+	font-weight: 600;
+}
+.allCatsItem:hover {
+	cursor: pointer;
 }
 .dropMenuTwo {
+	margin-top: 30px;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
 }
 .dropMenuTwo {
 	list-style: none;
 }
 .dropMenuTwo > li {
 	padding: 5px;
+	flex: 1 0 33%;
 }
 .allCats {
 	font-weight: 600;
@@ -168,7 +183,7 @@
 
 <div class="container">
   <nav id="newMenu">
-    <p class="allCats">Каталог категорий</p>
+    <p class="allCats">xxx</p>
     <div class="showAllCats">
       <ul>
     <?php foreach ($categories as $category) { ?>
