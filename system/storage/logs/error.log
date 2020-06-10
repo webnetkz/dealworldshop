@@ -2514,3 +2514,28 @@
 2020-06-09 13:21:36 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/dealworld.shop/catalog/view/theme/default/template/multiseller/account-product-form.tpl on line 522
 2020-06-09 13:21:36 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/dealworld.shop/catalog/view/theme/default/template/multiseller/account-product-form.tpl on line 522
 2020-06-09 13:21:36 - PHP Notice:  Trying to access array offset on value of type bool in /var/www/dealworld.shop/catalog/view/theme/default/template/multiseller/account-product-form.tpl on line 746
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 55
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 56
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 57
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 65
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 55
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 56
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 57
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 65
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 55
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 56
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 57
+2020-06-10 13:54:46 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 65
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 55
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 56
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 57
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 65
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 55
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 56
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 57
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 65
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 55
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 56
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 57
+2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 65
+2020-06-10 15:02:34 - PHP Notice:  Undefined index: sort_order in /var/www/dealworld.shop/admin/controller/design/banner.php on line 386
