@@ -24,8 +24,8 @@ define('DIR_CATALOG', '/var/www/dealworld.shop/catalog/');
 // DB
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'admin');
-define('DB_PASSWORD', 'ghbdtn11!!QQ');
+define('DB_USERNAME', 'user');
+define('DB_PASSWORD', 'ghbdtnltnrf11!!QQ');
 define('DB_DATABASE', 'dealworld');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
