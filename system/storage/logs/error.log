@@ -2539,3 +2539,4 @@
 2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 57
 2020-06-10 13:54:54 - PHP Notice:  Undefined index: RUB in /var/www/dealworld.shop/system/library/currency.php on line 65
 2020-06-10 15:02:34 - PHP Notice:  Undefined index: sort_order in /var/www/dealworld.shop/admin/controller/design/banner.php on line 386
+2020-06-10 17:01:18 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/dealworld.shop/admin/controller/module/featured.php on line 124

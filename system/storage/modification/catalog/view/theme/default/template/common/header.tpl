@@ -70,7 +70,6 @@
 	z-index: 9999999;
 	background: rgb(252, 252, 242);
 	box-shadow: 0 0 10px black;
-	overflow: scroll-y;
 }
 .showAllCats > ul {
 	width: 100%;
@@ -216,7 +215,7 @@
 
 <div class="container">
   <nav id="newMenu">
-    <p class="allCats">Catalog</p>
+    <p class="allCats">Каталог товаров</p>
     <div class="showAllCats">
       <ul>
     <?php foreach ($categories as $category) { ?>
